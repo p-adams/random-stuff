@@ -1,0 +1,43 @@
+        h1{
+            text-align: center;
+        }
+
+       .bead{  
+            background-color: coral;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            color: whitesmoke;
+            line-height: 35px;
+            display: block;
+            position: absolute;
+            overflow: hidden;
+            top: 35%;
+            left: 75%;
+            margin: -25px;
+            
+        }
+        
+        #count{
+            float: right;
+            margin-right: 15%;
+            height: 25px;
+            width: 50px;
+        }
+        #c{
+            text-align: center;
+            font-size: 50px;
+        }
+        .one { transform: rotate(0deg) translate(-450px); }
+        .two { transform: rotate(-5deg) translate(-420px); }
+        .three { transform: rotate(-10deg) translate(-380px); }
+        .four { transform: rotate(-15deg) translate(-340px); }
+        .five { transform: rotate(-20deg) translate(-300px); }
+        .six { transform: rotate(-25deg) translate(-250px); }
+        .seven { transform: rotate(-30deg) translate(-200px); }
+        
+        .eight { transform: rotate(-35deg) translate(-150px); }
+        .nine { transform: rotate(-40deg) translate(-100px); }
+        .ten { transform: rotate(-45deg) translate(-50px); }
+        .eleven { transform: rotate(-50deg) translate(-0px); }

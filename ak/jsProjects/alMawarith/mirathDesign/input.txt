@@ -1,0 +1,24 @@
+function identify(form) {
+  var first = form.querySelector('[name=first]');
+  var last = form.querySelector('[name=last]');
+  var email = form.querySelector('[name=email]');
+  return {
+    first: first.value,
+    last: last.value,
+    email: email.value
+  }
+}
+
+var form = document.querySelector('#target');
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  console.log(identify(e.target));
+});
+
+<form id="target">
+  <input name="first" placeholder="first">
+  <input name="last" placeholder="last">
+  <input type="email" name="email" placeholder="email">
+  <input type="submit" value="Identify">
+</form>
+<div id="out"></div>

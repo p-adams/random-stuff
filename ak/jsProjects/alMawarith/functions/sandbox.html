@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Stuff</title>
+    <script type="text/javascript" src="sandbox.js"></script>
+    </head>
+<body>
+    <h3>Search for book</h3>
+    <input type="text" id="author" placeholder="Enter author's name">
+    <input type="button" value="Add author's name" onclick="getAuthor();"><br>
+    <p id="searchedAuthors"></p>
+    <input type="text" id="title" placeholder="Enter title">
+    <input type="button" value="Add title" onclick="getTitle();"><br>
+    <input type="text" id="isbn" placeholder="Enter ISBN">
+    <input type="button" value="Add ISBN" onclick="getISBN();"><br>  <h4>Browse Catalog</h4>
+    <br><select id="catalog">
+        <option value="tuhfah">Tuhfah</option>
+        <option value="nihayah">Nihayah</option>
+        <option value="mughni">Mughni</option>
+        <option value="kanz">Kanz al-Raghibin</option>
+        </select>
+        <input type="text" id="quantity" placeholder="">
+        <input type="button" value="Add to cart" onclick=addTitle();><br>
+        <p id="selectedTitles"></p>
+    <input type="button" value="purchase" onclick="purchase();">
+    <p id="orderForm"></p><br>
+    <p id="demo2"></p><br>
+    <p id="demo3"></p>
+
+    </body>
+</html>

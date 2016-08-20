@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head><title>Islamic Calendar</title>
+    <script type="text/javascript" src="hijraAlgorithm.js"></script>
+    <link rel="stylesheet" type="text/css" href="calendar.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <style>
+        #info{
+            font-size: 10px;
+        }
+    
+    </style>
+    </head>
+<body onload="showDate();">
+    <!--Today's Gregorian/Hijri date:
+    <p id="demo"></p><br>-->
+    <div class="wrapper">
+        <div class="header">
+         <p><a href="shaban.html" id="nav">
+        <span class="glyphicon glyphicon-chevron-left"></span></a><a href="#openModal" style="color:white;">Ramadhan, 1437</a>
+        <a href="shawwal.html" id="nav"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </p>
+             <div id="openModal" class="largeDialog">
+     <div><a href="#close" title="Close" class="close">X</a>
+
+        	<h3>Ramadhan</h3><br>
+
+        <h5>Ramadhan is the ninth lunar month of the Islamic calendar. Ramadhan is derived from the word ramadh (scorchedness) because the month was named during a period of extreme heat. There are many virtues associated with the month of Ramadhan.</h5>
+        <ul>
+        <li>Allah Most High says in the Quran: "The month of Ramadan in which was revealed the Qur'an, a guidance for mankind, and clear proofs of the guidance, and the Criterion (of right and wrong). And whosoever of you is present, let him fast the month, and whosoever of you is sick or on a journey, (let him fast the same) number of other days. Allah desireth for you ease; He desireth not hardship for you; and (He desireth) that ye should complete the period, and that ye should magnify Allah for having guided you, and that peradventure ye may be thankful" (2:185).</li>
+        <li>It was narrated form Anas bin Malik that the Messenger of Allah said: " There has come to you Ramadan in which the gates of Paradise are opened, the gates of the fire are closed and the devils are chained up."</li> 
+        <li>The Prophet said:  "Whoever observes fasts during the month of Ramadan out of sincere faith, and hoping to attain Allah's rewards, then all his past sins will be forgiven."</li></ul>
+        <h5>Fasting Ramadhan is one of the pillars of Islam, and one of the greatest acts of worship. Fasting Ramadhan is obligatory upon every adult Muslim who is able to fast.</h5>
+    
+         <h5>Devotions to observe during Ramadhan: </h5>
+         <ul>
+            <li>The obligatory fast of Ramadhan.</li>
+             <li>Performing the tarawih prayer each night of Ramadhan</li>
+             <li>Recitation of the Quran</li>
+             <li>Spiritual retreat (itikaf) (click date highlighted in orange for more details).</li>
+             <li>Observing the Night of Power (see date highlighted in brown).</li>
+         </ul>
+         <h5>Historical events that occured during Ramadhan: </h5>
+         <ul>
+            <li>The descent of the Quran (13 years before hijrah).</li>
+             <li>The passing of Khadijah</li>
+             <li>The Battle of Badr (2 AH).</li>
+             <li>The birth of Hasan bin 'Ali (3 AH)</li>
+             <li>The Conquest of Makkah (8 AH).</li>
+             <li>The Prophet's marriage to Zaynab bint Khuzaymah (4 AH).</li>
+             <li>Martyrdom of 'Ali (40 AH).</li>
+             <li>Passing of the Prophet's daughter Fatimah (11 AH).</li>
+             <li>Passing of Aisha (58 AH).</li>
+         </ul>
+        
+    </div>
+            </div>
+          <p class="greg">June-July, 2016</p>  
+        </div>
+        <div class="calendar-body">
+        <div class="row weekdays">
+        <div class="col-xs-1"><p>S</p></div>
+        <div class="col-xs-1"><p>M</p></div>
+        <div class="col-xs-1"><p>T</p></div>
+        <div class="col-xs-1"><p>W</p></div>
+        <div class="col-xs-1"><p>T</p></div>
+        <div class="col-xs-1"><a href= "#fri"><p class="friday">F</p></a><div id="fri" class="modalDialog">
+            <div><a href="#close" title="Close" class="close">X</a>
+        	<h2>Friday (al-Jumu'ah)</h2>
+                <h5> It was narrated from Aws bin Aws that :
+                The Prophet (ﷺ) said: "One of the best of your days is Friday. On this day, Adam was created and on this day he died, on this day the Trumpet will be blown, and on this day all creatures will swoon. So send a great deal of salah upon me on this day, for your salah will be presented to me." They said: "O Messenger of Allah (ﷺ), how will our salah be presented to you when you have decomposed (after death)?" He said: "Allah (SWT), the Mighty and Sublime, has forbidden the earth to consume the bodies of the prophets, peace be upon them."</h5>
+                <h5>Merits of Friday<ul><br>
+                    <li>The Friday prayer. Regarding the Friday prayer Allah Most High said: "O you who believe, when the call for prayer is made on Friday, hasten, set off, to the remembrance of God, to the prayer, and leave aside [all] commerce, suspend [all] such contracts. That is better for you, should you know, that it is better for you, then do it" (62:9).<br>
+                        <br>
+                        Some recommended acts of attending the Friday prayer:<ul>
+                        <li>Taking a purificatory bath</li>
+                        <li>Arriving early</li>
+                        <li>Listening attentively to the Friday sermons</li>
+                        <li>Reciting Quran and making remembrance of Allah Most High</li>
+                        </ul></li><br>
+                    <li>Performing the dawn prayer with a group on Friday</li>
+                    <li>The one who dies on Friday will be saved from the trials of the grave.</li>
+                    </ul></h5>
+            </div>
+        </div>
+            </div>
+        <div class="col-xs-1"><p>S</p></div>
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><p class="gr"></p><a href="#"></a><p></p></div>
+        <div class="col-xs-1"><p class="gr">6</p><a href="#"><p>1</p></a></div>
+        <div class="col-xs-1"><p class="gr">7</p><a href="#"><p>2</p></a></div>
+        <div class="col-xs-1"><p class="gr">8</p><a href="#"><p>3</p></a></div>
+        <div class="col-xs-1"><p class="gr">9</p><a href="#"><p>4</p></a></div>
+        <div class="col-xs-1"><p class="gr">10</p><a href="#"><p>5</p></a></div>
+        <div class="col-xs-1"><p class="gr">11</p><a href="#"><p>6</p></a></div>
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><p class="gr">12</p><a href="#"><p>7</p></a></div>
+        <div class="col-xs-1"><p class="gr">13</p><a href="#"><p>8</p></a></div>
+        <div class="col-xs-1"><p class="gr">14</p><a href="#"><p>9</p></a></div>
+        <div class="col-xs-1"><p class="gr">15</p><a href="#"><p>10</p></a></div>
+        <div class="col-xs-1"><p class="gr">16</p><a href="#"><p>11</p></a></div>
+        <div class="col-xs-1"><p class="gr">17</p><a href="#"><p>12</p></a></div>
+        <div class="col-xs-1"><p class="gr">18</p><a href="#"><p>13</p></a></div>
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><p class="gr">19</p><a href="#"><p>14</p></a></div>
+        <div class="col-xs-1"><p class="gr">20</p><a href="#"><p>15</p></a></div>
+        <div class="col-xs-1"><p class="gr">21</p><a href="#"><p>16</p></a></div>
+        <div class="col-xs-1"><p class="gr">22</p><a href="#"><p>17</p></a></div>
+        <div class="col-xs-1"><p class="gr">23</p><a href="#"><p>18</p></a></div>
+        <div class="col-xs-1"><p class="gr">24</p><a href="#"><p>19</p></a></div>
+            
+          <div class="col-xs-1"><p class="gr">25</p><a href="#lastTen"><p id="other">20</p></a><div id="lastTen" class="modalDialog">
+    <div><a href="#close" title="Close" class="close">X</a>
+
+        	<h2>Beginning of the Last 10 Days</h2><br>
+
+        <h5>The last ten days of Ramadan are very special days in the life of every Muslim. According to Muslims, they are the most blessed days in the blessed month of Ramadan, the month the Holy Quran was revealed. Muslims believe that although the Prophet Muhammad (p.b.u.h.) was promised Paradise, he used to exert himself even more in worship during these last ten days, hoping to draw closer to Allah. The Prophet's wife Aisha (may Allah be pleased with her) said, "With the start of the last ten days of Ramadan, the Prophet used to tighten his waist belt and used to pray all the night, and used to keep his family awake for the prayers." (Bukhari)</h5>
+        <h5>During the last ten days of Ramadhan, it is recommended to perform spiritual retreat (itikaf). In order for itikaf to be counted as spiritual retreat six conditions must be met:
+        </h5>
+        <ul>
+            <li>That one is Muslim</li>
+            <li>An intention must be formed</li>
+            <li>It must be performed in a masjid</li>
+            <li>That one remain in the masjid for at least a moment</li>
+            <li>That one is free from major ritual impurity</li>
+            <li>That one is sane</li>
+        
+        </ul>
+        
+        
+    </div>
+            </div></div>       
+            
+            
+            
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><p class="gr">26</p><a href="#"><p>21</p></a></div>
+        <div class="col-xs-1"><p class="gr">27</p><a href="#"><p>22</p></a></div>
+        <div class="col-xs-1"><p class="gr">28</p><a href="#"><p>23</p></a></div>
+        <div class="col-xs-1"><p class="gr">29</p><a href="#"><p>24</p></a></div>
+        <div class="col-xs-1"><p class="gr">30</p><a href="#"><p>25</p></a></div>
+        <div class="col-xs-1"><p class="gr">1</p><a href="#"><p>26</p></a></div>
+            
+              <div class="col-xs-1"><p class="gr">2</p><a href="#qadr"><p class="shawwal">27</p></a><div id="qadr" class="modalDialog">
+    <div><a href="#close" title="Close" class="close">X</a>
+
+        	<h2>Laylat al-Qadr</h2><br>
+
+       <h5>The Prophet (peace and blessings of Allaah be upon him) enjoined staying up and praying on Laylat al-Qadr out of faith and in the hope of reward. It was narrated from Abu Hurayrah (ra) that the Prophet (saw) said:  “Whoever stays up and prays on Laylat al-Qadr out of faith and in the hope of reward, his previous sins will be forgiven.”  This hadeeth indicates that it is prescribed to observe Laylat al-Qadr by spending the night in prayer. One of the best du’as that may be recited on Laylat al-Qadr is that which the Prophet (saw) taught to ‘Aishah (ra). Al-Tirmidhi narrated, and classed the report as saheeh, that ‘Aisha said: “I said, ‘O Messenger of Allah, if I know which night is Laylat al-Qadr, what should I say on that night?’ He said, ‘Say: Allahumma innaka ‘afuwwun tuhibb al-‘afwa fa’affu ‘anni (O Allah, You are forgiving and You love forgiveness, so forgive me).”</h5>
+        <h5>The scholars of Islam differ over the exact date of The Night of Power. al-Shafi'i and others maintained that it is on the 21st or 23rd of Ramadhan, while others considered it to be the 27th of Ramadhan. Many scholars do agree that it is likely to occur during the last ten days of Ramadhan during the odd nights.</h5>
+    </div>
+            </div></div>   
+            
+            
+            
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><p class="gr">3</p><a href="#"><p>28</p></a></div>
+        <div class="col-xs-1"><p class="gr">4</p><a href="#"><p>29</p></a></div>
+        <div class="col-xs-1"><p class="gr">4</p><a href="#"><p>30</p></a></div>
+         
+            
+            
+        <div class="col-xs-1"><p class="gr"></p><a href="#"><p></p></a></div>
+        <div class="col-xs-1"><p class="gr"></p><a href="#"><p></p></a></div>
+        <div class="col-xs-1"><p class="gr"></p><p class="inactive"></p></a></div>
+        <div class="col-xs-1"><p class="gr"></p><p class="inactive"></p></a></div>
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><p class="gr"></p><p class="inactive"></p></a></div>  
+        </div>
+        <div class="line">
+        </div>
+        <div class="current-date"><p>Today: </p><p id="demo"></p>
+        </div>
+    
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    </body>
+</html>

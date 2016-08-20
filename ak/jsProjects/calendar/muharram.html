@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head><title>Islamic Calendar</title>
+    <script type="text/javascript" src="hijraAlgorithm.js"></script>
+    <link rel="stylesheet" type="text/css" href="calendar.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+<style>
+    </style>
+    </head>
+<body onload="showDate();">
+    <!--Today's Gregorian/Hijri date:
+    <p id="demo"></p><br>-->
+    <div class="wrapper">
+        <div class="header">
+        <p><a href="#openModal" style="color:white;">Muharram, 1437</a>
+        <a href="safar.html" id="nav"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            
+        </p>
+        <div id="openModal" class="largeDialog">
+     <div><a href="#close" title="Close" class="close">X</a>
+
+        	<h3>Muharram</h3><br>
+
+        <h5>Muharram is the first lunar month of the Islamic calender.</h5>
+        <h5>The month of Muharram is named muharram because along with Dhu-l Qa'dah, Dhu-l Hijjah, and Rajab, Muharram is one of the sanctified months about which Allah Most High said: "Verily the number of months, used to reckon the year, with Allah is twelve months in the Book of Allah from the day that He created the heavens and the earth; four of them are sacred, inviolable" (9:36). According to some scholars, Muharram is the most virtous of the four sanctified months. For it has been related on the authority of Abu Dhar that the Prophet said "the best part of the night is its middle, and the best month (save for Ramadhan) is the month of Muharram" (al-Nasa'i). It is also mentioned that the Prophet named Muharram Allah's month, which is an indication of Muharram's special merits.</h5>
+         <h5>Devotions during Muharram:</h5>
+         <ul>
+            <li>Observing voluntary fasts throughout the month.</li>
+            <li>Observing the Day of 'Ashura. Click on date (10th of Muharram) in calendar for more details</li>
+         </ul>
+         <h5>Historical events that took place in Muharram:</h5>
+         <ul>
+            <li>The Makkan boycott of the Bani Hashim.</li>
+            <li>Letters were sent to various kings and rulers by the Prophet (7 AH).</li>
+             <li>The martyrdom of Husayn</li>
+            <li>'Uthman bin 'Affan elected as caliph.</li>
+            <li>The Battle of Najd (2 AH)</li>
+            <li>The Battle of Qirara</li>
+         </ul>
+         
+    </div>
+            </div>
+          <p class="greg">October-November, 2015</p>
+            
+        </div>
+        <div class="calendar-body">
+        <div class="row weekdays">
+        <div class="col-xs-1"><p>S</p></div>
+        <div class="col-xs-1"><a href= "#monday"><p class="fast">M</p></a><div id="monday" class="smallDialog">
+            <div><a href="#close" title="Close" class="close" >X</a>
+        	<h2>Fasting on Monday</h2><br>
+                <h5>Abu Qatada reported that the Messenger of Allah, may Allah bless him and grant him peace, was asked about fasting Mondays and he said, "That is the day on which I was born and the day when I was sent - or when revelation descended on me." (Muslim)</h5>
+                <h5>Abu Hurayra reported that the Messenger of Allah, may Allah bless him and grant him peace, said, "Actions are presented on Mondays and Thursdays, so I like my actions to be presented while I am fasting." (Muslim related it without mentioning fasting.) (at-Tirmidhi)</h5>
+                <h5>'A'isha said, "The Messenger of Allah, may Allah bless him and grant him peace, used to take care to fast on Mondays and Thursdays." (at-Tirmidhi)</h5>
+            </div>
+        </div>
+            </div>
+        <div class="col-xs-1"><p>T</p></div>
+        <div class="col-xs-1"><p>W</p></div>
+        <div class="col-xs-1"><a href= "#thurs"><p class="fast">TR</p></a><div id="thurs" class="smallDialog">
+            <div><a href="#close" title="Close" class="close">X</a>
+        	<h2>Fasting on Thursday</h2><br>
+                <h5>Abu Hurayra reported that the Messenger of Allah, may Allah bless him and grant him peace, said, "Actions are presented on Mondays and Thursdays, so I like my actions to be presented while I am fasting." (Muslim related it without mentioning fasting.) (at-Tirmidhi)</h5>
+                <h5>'A'isha said, "The Messenger of Allah, may Allah bless him and grant him peace, used to take care to fast on Mondays and Thursdays." (at-Tirmidhi)</h5>
+            </div>
+        </div>
+            </div>
+       <div class="col-xs-1"><a href= "#fri"><p class="friday">F</p></a><div id="fri" class="modalDialog">
+            <div><a href="#close" title="Close" class="close">X</a>
+        	<h2>Friday (al-Jumu'ah)</h2>
+                <h5> It was narrated from Aws bin Aws that :
+                The Prophet (ﷺ) said: "One of the best of your days is Friday. On this day, Adam was created and on this day he died, on this day the Trumpet will be blown, and on this day all creatures will swoon. So send a great deal of salah upon me on this day, for your salah will be presented to me." They said: "O Messenger of Allah (ﷺ), how will our salah be presented to you when you have decomposed (after death)?" He said: "Allah (SWT), the Mighty and Sublime, has forbidden the earth to consume the bodies of the prophets, peace be upon them."</h5>
+                <h5>Merits of Friday<ul><br>
+                    <li>The Friday prayer. Regarding the Friday prayer Allah Most High said: "O you who believe, when the call for prayer is made on Friday, hasten, set off, to the remembrance of God, to the prayer, and leave aside [all] commerce, suspend [all] such contracts. That is better for you, should you know, that it is better for you, then do it" (62:9).<br>
+                        <br>
+                        Some recommended acts of attending the Friday prayer:<ul>
+                        <li>Taking a purificatory bath</li>
+                        <li>Arriving early</li>
+                        <li>Listening attentively to the Friday sermons</li>
+                        <li>Reciting Quran and making remembrance of Allah Most High</li>
+                        </ul></li><br>
+                    <li>Performing the dawn prayer with a group on Friday</li>
+                    <li>The one who dies on Friday will be saved from the trials of the grave.</li>
+                    </ul></h5>
+            </div>
+        </div>
+            </div>
+        <div class="col-xs-1"><p>S</p></div>
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><a href="#"></a></div>
+        <div class="col-xs-1"><a href="#"></a></div>
+        <div class="col-xs-1"><a href="#"></a></div>
+        <div class="col-xs-1"><p class="gr">14</p><a href="#"><p>1</p></a></div>
+        <div class="col-xs-1"><p class="gr">15</p><a href="#"><p>2</p></a></div>
+        <div class="col-xs-1"><p class="gr">16</p><a href="#"><p >3</p></a></div>
+        <div class="col-xs-1"><p class="gr">17</p><a href="#"><p>4</p></a></div>
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><p class="gr">18</p><a href="#"><p>5</p></a></div>
+        <div class="col-xs-1"><p class="gr">19</p><a href="#"><p >6</p></a></div>
+        <div class="col-xs-1"><p class="gr">20</p><a href="#"><p>7</p></a></div>
+        <div class="col-xs-1"><p class="gr">21</p><a href="#"><p>8</p></a></div>
+        <div class="col-xs-1"><p class="gr">22</p><a href="#"><p>9</p></a></div>
+        <div class="col-xs-1"><p class="gr">23</p><a href= "#ashura"><p id="ev">10</p></a><div id="ashura" class="modalDialog">
+    <div><a href="#close" title="Close" class="close">X</a>
+
+        	<h2>Day of Ashura</h2><br>
+        <h5>
+        Ashura’ marks the day in which Allah Most High saved Musa (as) and destroyed the Pharaoh. It is related by Imam Bukhari on the authority of Ibn Abbas that when the Prophet (saw) came to Madinah he found that the Jews observed the fast of 'Ashura. He enquired about it from them and was told that it was the day on which God had delivered the Children of Israel from the enemy and Moses used to keep a fast on it as an expression of gratitude to the Almighty. The Prophet  thereupon, remarked that 'Moses has a greater claim upon me than upon you,' and he fasted on that day and instructed his followers to do the same. Regarding its merits, the Prophet(saw) said: "The fast of Ashura' expiates the sins commited during the previous year" (Muslim).</h5><br>
+        <h5>It is advisable that the fast of 'Ashura' should either be preceded or followed by another fast. Meaning one should fast two days: the 9th and 10th of Muharram or the 10th and 11th. The reason of this additional fast, as mentioned by the Holy Prophet (saw) is that the Jews used to fast on the day of ‘Ashura alone, and the Holy Prophet (saw) wanted to distinguish the Muslim way of fasting from that of Jews. Therefore, he advised the Muslims to add another fast to that of 'Ashura'.</h5>
+        
+    </div>
+            </div></div>
+        <div class="col-xs-1"><p class="gr">24</p><a href="#"><p>11</p></a></div>
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><p class="gr">25</p><a href="#"><p>12</p></a></div>
+        <div class="col-xs-1"><p class="gr">26</p><a href= "#white"><p class="white">13</p></a><div id="white" class="smallDialog">
+    <div><a href="#close" title="Close" class="close">X</a>
+
+        	<h2>White Days</h2>
+        <br>
+        <h5>Abu Dharr reported that the Messenger of Allah, may Allah bless him and grant him peace, said, "If you fast three days of the month, then fast the thirteenth, fourteenth and fifteenth." (at-Tirmidhi)</h5>
+        <h5>Qatada ibn Milhan said, "The Messenger of Allah, may Allah bless him and grant him peace, used to command us to fast the white days: the thirteenth, fourteenth and fifteenth." (Abu Dawud) </h5>
+    </div>
+            </div></div>
+        <div class="col-xs-1"><p class="gr">27</p><a href= "#white"><p class="white">14</p></a><div id="white" class="smallDialog">
+    <div><a href="#close" title="Close" class="close">X</a>
+
+        	<h2>White Days</h2>
+        <br>
+        <h5>Abu Dharr reported that the Messenger of Allah, may Allah bless him and grant him peace, said, "If you fast three days of the month, then fast the thirteenth, fourteenth and fifteenth." (at-Tirmidhi) </h5>
+        <h5>Qatada ibn Milhan said, "The Messenger of Allah, may Allah bless him and grant him peace, used to command us to fast the white days: the thirteenth, fourteenth and fifteenth." (Abu Dawud) </h5>
+    </div>
+            </div></div>
+       <div class="col-xs-1"><p class="gr">28</p><a href= "#white"><p class="white">15</p></a><div id="white" class="smallDialog">
+    <div><a href="#close" title="Close" class="close">X</a>
+
+        	<h2>White Days</h2>
+        <br>
+        <h5>Abu Dharr reported that the Messenger of Allah, may Allah bless him and grant him peace, said, "If you fast three days of the month, then fast the thirteenth, fourteenth and fifteenth." (at-Tirmidhi) </h5>
+        <h5>Qatada ibn Milhan said, "The Messenger of Allah, may Allah bless him and grant him peace, used to command us to fast the white days: the thirteenth, fourteenth and fifteenth." (Abu Dawud) </h5>
+    </div>
+            </div></div>
+        <div class="col-xs-1"><p class="gr">29</p><a href="#"><p >16</p></a></div>
+        <div class="col-xs-1"><p class="gr">30</p><a href="#"><p>17</p></a></div>
+        <div class="col-xs-1"><p class="gr">31</p><a href="#"><p>18</p></a></div>
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><p class="gr">1</p><a href="#"><p>19</p></a></div>
+        <div class="col-xs-1"><p class="gr">2</p><a href="#"><p >20</p></a></div>
+        <div class="col-xs-1"><p class="gr">3</p><a href="#"><p>21</p></a></div>
+        <div class="col-xs-1"><p class="gr">4</p><a href="#"><p>22</p></a></div>
+        <div class="col-xs-1"><p class="gr">5</p><a href="#"><p >23</p></a></div>
+        <div class="col-xs-1"><p class="gr">6</p><a href="#"><p>24</p></a></div>
+        <div class="col-xs-1"><p class="gr">7</p><a href="#"><p>25</p></a></div>
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><p class="gr">8</p><a href="#"><p>26</p></a></div>
+        <div class="col-xs-1"><p class="gr">9</p><a href="#"><p >27</p></a></div>
+        <div class="col-xs-1"><p class="gr">10</p><a href="#"><p>28</p></a></div>
+        <div class="col-xs-1"><p class="gr">11</p><a href="#"><p>29</p></a></div>
+        <div class="col-xs-1"><p class="gr">12</p><a href="#"><p >30</p></a></div>
+        <div class="col-xs-1"><p class="gr">13</p><p class="inactive">1</p></a></div>
+        <div class="col-xs-1"><p class="gr">14</p><p class="inactive">2</p></a></div>
+        </div>
+        <div class="row dates">
+        <div class="col-xs-1"><p class="gr">15</p><p class="inactive">3</p></a></div>  
+        </div>
+        <div class="line">
+        </div>
+        <div class="current-date"><p>Today: </p><p id="demo"></p>
+        </div>
+    
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    </body>
+</html>

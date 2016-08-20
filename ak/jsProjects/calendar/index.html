@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<!--
+Todo:
+1) Reaccuring events, such as friday prayer, fasting monday and thursday, 
+...should be highlighted on weekdays, not days of the week.
+
+
+
+
+    -->
+<html>
+<head>
+    <title>Islamic Calendar</title>
+    <script type="text/javascript" src="hijraAlgorithm.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+    body{
+    font-family: "CIRCULA";
+    background-color: #EBEFF3;
+    }
+    a:-webkit-any-link{
+    text-decoration: none;
+    color: black;
+    }
+    .container{
+    
+    text-align: center;
+    background-color: white;
+    padding-left:0px;
+    padding-right:0px;
+    margin: 10em;
+    width: 50%;
+    height: 40%;
+
+    box-shadow: 10px 10px 55px gray;
+    
+        /*padding: 30px;*/
+        
+        }
+        
+        .calendar-body .col-xs-2{
+        width: 9.8em;
+        
+        text-align: center;
+        
+        }
+        .header {
+        margin-top: -15%;
+        height: 7em;  
+        background-color:#45b29d;
+        color: #eeeff7;
+        text-align: center;
+        }
+        .header p{
+            padding-top: 0.8em;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .inactive{
+            color: #ccc;
+        }
+        .months{
+            margin-top: 40px;
+            margin-left: 7%;
+            font-size: 14px;
+            color: #7f8c8d;
+            white-space: nowrap;
+            
+        }
+        
+        
+        .line{
+            
+            border: 0.1em solid #00BADF;
+        }
+        .current-date{
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0.6em;
+        }
+        .calendar-body .row .col-xs-1 p:hover{
+            color: #4778a6;
+            
+        }
+        
+        #nav{
+            color:#EAF2E4;
+            font-size: 30px;
+            padding: 2em;
+        }
+        .theDate{
+            white-space: nowrap;
+            color: #45b29d;
+            
+        }
+        h1{
+            margin-left: 12%;
+            width: 55%;
+            height: 130px;
+           border-radius: 1px;
+            background-color: #34495e;
+            box-shadow: 10px 10px 55px grey;
+            text-shadow: 1px 1px black;
+        }
+        a:hover{
+            font-size: 22px;
+        }
+        .icon{
+            margin-bottom: 0;
+            text-align: center;
+            margin-left: 50%;
+            
+        }
+        
+    
+    </style>
+    </head>
+<body onload="showDate();">
+    <h1 style="font-size: 110px; text-align: center; color:white; text-transform:uppercase">Taqwim<br></h1>
+    
+    <div class="container">
+        <div class="header">
+        <p><a href="#" id="nav">
+        <span class="glyphicon glyphicon-chevron-left"></span></a>1437
+        <a href="#" id="nav"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        
+        </div>
+        
+        <div class="calendar-body">
+        <div class="row months">
+        <div class="col-xs-2"><a href="muharram.html"><p style="color:#7f8c8d;">Muharram</p></a></div>
+        <div class="col-xs-2"><a href="safar.html"><p style="color:#7f8c8d">Safar</p></a></div>
+        <div class="col-xs-2"><a href="rabiAlAwwal.html"><p style="color:#7f8c8d ">Rabi' al-Awwal</p></a></div> 
+        
+        </div>
+        <div class="line">
+        </div>
+        <div class="row months">
+            <div class="col-xs-2"><a href="rabiAlThani.html"><p style="color:#7f8c8d ">Rabi' al-Thani</p></a></div>
+        <div class="col-xs-2"><a href="jumadaUla.html"><p  style="color:#7f8c8d">Jumada-l Ula</p></a></div>
+        <div class="col-xs-2"><a href="jumadaAkhira.html"><p style="color:#7f8c8d">Jumada-l Akhirah</p></a></div>
+        
+        </div>
+            <div class="line">
+        </div>
+        <div class="row months">
+            <div class="col-xs-2"><a href="rajab.html"><p style="color:#7f8c8d">Rajab</p></a></div>
+        <div class="col-xs-2"><a href="shaban.html"><p style="color:#7f8c8d">Sha'ban</p></a></div>
+        <div class="col-xs-2"><a href="ramadhan.html"><p  style="color:#7f8c8d">Ramadhan</p></a></div>
+        </div>
+            <div class="line">
+                
+        </div>
+            <div class="row months">
+            <div class="col-xs-2"><a href="shawwal.html"><p style="color:#7f8c8d">Shawwal</p></a></div>
+        <div class="col-xs-2"><a href="dhuQadah.html"><p style="color:#7f8c8d">Dhu-l Qa'dah</p></a></div>
+        <div class="col-xs-2"><a href="dhuHijja.html"><p style="color:#7f8c8d">Dhu-l Hijjah</p></a></div>
+            
+            </div>
+             <div class="line">
+                
+        </div>
+            <div >
+                <div style="background-color: #45b29d; color:white; height: 70px">
+            <p>Today is: <p id="demo"></p></p>
+                </div>
+                </div>
+    </div>
+    </div>
+    
+    
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mirath Program</title>
+  <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="mawarithTest.css">
+<script type="text/javascript" src="mawarithTest.js"></script>
+<style>
+    #t{
+        font-weight: 900;
+    }
+    
+    </style>
+    </head>
+<body>    
+    <div id="navigation_container">
+ 
+<!-- the ribbon body -->
+ 
+      <div class="rectangle">
+ 
+<!-- the navigation links -->
+<h1 id="bannerTitle">al-Mawarith</h1>
+          <h2 id="bannerSubtitle">Islamic Inheritance Calculator</h2>
+   <ul id="hadith">
+       The Prophet (ﷺ) said, "Give the shares of the inheritance to those who are entitled to receive it" (Sahih al-Bukhari).
+   </ul>
+ 
+<!-- end container -->
+</div>
+        <h3>Propert amount: </h3>
+        <input type="text" id="total" placeholder="Enter property amount here">
+    <h3 id="table_heading">Select Heirs And Specify Their Number</h3>
+	<form name=heirList method="get" action="results.html"><!--rename to FemaleHeir-->
+        
+		<div id="backGround">
+			<table>
+				<tr>
+
+					<td><b id="heading">Female Heirs:</b><select id = "femaleHeirs" name=name>
+                    <option value="" style="display:none"> Select female heir(s) </option>
+                    <option value="Maternal grandmother">Maternal grandmother</option>
+                    <option value="Paternal grandmother">Paternal grandmother</option>
+                    <option value="Mother">Mother</option>
+                    <option value="Wife">Wife</option> 
+                    <option value="Full sister">Full sister</option> 
+                    <option value="Maternal sister">Maternal sister</option> 
+                    <option value="Paternal sister">Paternal sister</option> 
+                    <option value="Daughter">Daughter</option> 
+                    <option value="Granddaughter">Granddaughter</option> 
+                    </select></td>
+                    <td id="heading" ><b>Add Heir:</b><input id="addHeirBox" type=number min="0" max="12" name=data placeholder="#"></td>
+                    
+                    <td id="heading" ><b>Male Heirs:</b><select id= "maleHeirs" name=name>
+                    <option value="" style="display:none"> Select male heir(s) </option>
+                    <option value="Paternal grandfather">Paternal grandfather</option>
+                    <option value="Father">Father</option>
+                    <option value="Husband">Husband</option>
+                    <option value="Full brother">Full brother</option> 
+                    <option value="Maternal brother">Maternal brother</option> 
+                    <option value="Paternal brother">Paternal brother</option> 
+                    <option value="Son">Son</option> 
+                    <option value="Grandson">Grandson</option> 
+                    <option value="Full paternal uncle">Full paternal uncle</option>
+                    <option value="Paternal uncle">Paternal uncle</option> 
+                    <option value="Full cousin">Full cousin</option> 
+                    <option value="Paternal cousin">Paternal cousin</option> 
+                    <option value="Full nephew">Full nephew</option> 
+                    <option value="Paternal nephew">Paternal nephew</option>
+                        
+                        
+                        
+                    </select></td>
+					<td id="heading" ><b>Add Heir:</b><input id="addHeirBox2" type=number min="0" max="12" name=data placeholder="#"></td>
+
+				</tr>
+
+				<tr>
+					<td colspan="2" id="buttonTab">
+					    <input type=button class="buttonStyle" value="Add"   onclick="addHeir()"> 
+					    
+					    <input type=button class="buttonStyle" value="Remove" onclick="RemoveHeir()">
+					  </td>
+                    <td colspan="2" id="buttonTab">
+					    <input type=button class="buttonStyle"  value="Add"   onclick="addHeir2()"> 
+					    
+					    <input type=button class="buttonStyle" value="Remove" onclick="RemoveHeir2()">
+                        </td>
+				</tr>
+			</table>
+		</div>
+        <div id="items_table">
+			<h2>Heir List</h2>
+			<table id=list></table>
+			<p>
+				<label>
+                    <input type=button class="buttonStyle" value="Submit" onclick="Submit()">
+                    <input type=button class="buttonStyle" value="Clear" onclick="ClearAll()">
+					<i>* Remove all heirs</i></label>
+			</p>
+		</div>
+    </form>
+         <div id="results_table">	
+        
+        <h2>Results</h2>
+            <p id=t>Property Amount:</p>
+            <table id=amt></table>
+            <p id=t>Eligible heirs: </p>
+            <table id=el></table>
+            <p id=t>Ineligible heirs: </p>
+            <table id=in></table>
+            <p id=t>Recipient of entire inheritance:</p>
+            <table id=ent></table>
+            <p id=t>Recipients of 1/2:</p>
+            <table id=half></table>
+            <p id=t>Recipients of 1/4</p>
+            <table id=four></table>
+            <p id=t>Recipients of 2/3:</p>
+            <table id=two></table>
+            <p id=t>Recipients of 1/3:</p>
+            <table id=third></table>
+            <p id=t>Recipients of 1/6:</p>
+            <table id=sixth></table>
+            <p id=t>Recipients of 1/8:</p>
+            <table id=eig></table>
+            <p id=t>Universal/co-universal heirs:</p>
+			<table id=uni></table>
+            <p id=t>Co-universal heirs:</p>
+			<table id=co></table>
+           
+        </div>
+    
+    </body>
+</html>

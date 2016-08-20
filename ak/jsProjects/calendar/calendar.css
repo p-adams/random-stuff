@@ -1,0 +1,261 @@
+body{
+font-family: "Montserrat";
+background-color: #EBEFF3;   
+}
+a:-webkit-any-link{
+text-decoration: none;
+color: black;
+}
+.wrapper{
+margin-left: 0.5em;
+padding: 5px;
+border: 0.1em solid #ccc;
+width: 100%;
+height: 100%;
+box-shadow: 0.1em 0.2em 0.8em #ccc;
+background-color: whitesmoke;
+}
+.glyphicon-chevron-left{
+margin-right: 55px;
+}
+.header{
+margin: 0;
+width:100%;
+height: 7em;
+background-color: #34495e;
+color:white;
+text-align: center;
+}
+.calendar-body .col-xs-1{
+width: 9.5em;  
+text-align: center;
+padding: 3em;/*changed padding to 3em*/
+}
+.col-xs-1{
+height: 5.5em;
+
+/*tile colors*/
+}
+.header p{
+padding-top: 1.2em;
+text-transform: uppercase;
+}
+.inactive{
+color: #ccc;
+}
+row .weekdays{
+margin-right: 25px;
+margin-top: 0.7em;
+padding: 1em;
+color: white;
+font-weight: bolder;
+text-align: center;
+/*change color of weekday names here*/
+background-color: #45b29d;
+}
+.dates{
+padding: 0.2em 1em 0.2em 1em;
+/*change color of calendar here*/
+}
+.line{
+height: 0.em;
+border: 0.1em solid black;
+}
+.current-date{
+
+text-transform: uppercase;
+text-align: center;
+padding: 0.6em;
+background-color: cadetblue;
+color:floralwhite;
+}
+.calendar-body .row .col-xs-1 p:hover{
+color: #4778a6;
+}
+#nav{
+color:azure;
+padding-left: 3em;
+}
+.greg{
+font-size: 12px;
+text-align: left;
+margin-left: 2%;
+}
+.gr{
+font-size: 8px;
+text-align: left;
+}
+p{
+font-size:20px;
+}
+.fast{
+background-color:lightcoral;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+color: white;
+}
+.friday{
+background-color:skyblue;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+color: white;
+}
+.event{
+background-color: ;
+border-radius: 50%;
+width: 50px;
+height: 50px; 
+
+}
+#ev{
+background-color: lightgreen;
+
+border-radius: 50%;
+width: 50px;
+height: 50px;
+}
+.white{
+background-color: lightgoldenrodyellow;
+border-color: deepskyblue;
+border-radius: 50%;
+width: 50px;
+height: 50px; 
+}
+.modalDialog {
+position: fixed;
+font-family: 'Montserrat', sans-serif;
+color: black;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 99999;
+opacity:0;
+-webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+pointer-events: none;
+}
+.modalDialog:target {
+opacity:1;
+pointer-events: auto;
+}
+.modalDialog > div {
+width: 700px;
+height: 75%;
+position: relative;
+margin: 10% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 2px;
+background-color: white;
+}
+.close {
+
+background-color: #45b29d;
+color: black;
+line-height: 25px;
+position: absolute;
+right: 50px;
+text-align: center;
+top: 20px;
+width: 30px;
+text-decoration: none;
+font-weight: bolder;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 100%;
+-moz-box-shadow: 1px 1px 3px #000;
+-webkit-box-shadow: 1px 1px 3px #000;
+box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+background: #45b29d;
+}
+
+h5{
+    font-size: 12px;
+    text-align: left;
+}
+ul{
+    text-align: left;
+}
+.smallDialog {
+position: fixed;
+font-family: 'Montserrat', sans-serif;
+color: black;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 99999;
+opacity:0;
+-webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+pointer-events: none;
+}
+.smallDialog:target {
+opacity:1;
+pointer-events: auto;
+}
+.smallDialog > div {
+width: 700px;
+height: 45%;
+position: relative;
+margin: 10% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 2px;
+background-color: white;
+}
+.glyphicon-chevron-left{
+margin-right: 45px;
+}
+ .shawwal{          
+background-color: tan;
+border-radius: 50%;
+width: 50px;
+height: 50px; 
+
+}
+#other{
+background-color: orange;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+}
+.largeDialog {
+position: fixed;
+font-family: 'Montserrat', sans-serif;
+color: black;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 99999;
+opacity:0;
+-webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+pointer-events: none;
+overflow: scroll;
+}
+.largeDialog:target {
+opacity:1;
+pointer-events: auto;
+overflow: scroll;
+}
+.largeDialog > div {
+width: 900px;
+height: 100%;
+position: relative;
+margin: 10% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 2px;
+background-color: white;
+overflow: scroll;
+}
